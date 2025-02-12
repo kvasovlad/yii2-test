@@ -42,14 +42,16 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'POST requests' => 'request/create',
+                'GET requests' => 'request/index',
+                'PUT requests/<id:\d+>' => 'request/update',
             ],
         ],
-        */
+
     ],
     'params' => $params,
 ];
